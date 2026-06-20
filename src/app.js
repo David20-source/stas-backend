@@ -13,7 +13,7 @@ const { adminRouter }  = require('./routes/admin.routes')
 function createApp() {
   const app = express()
 
-  app.use(cors({ origin: process.env.CORS_ORIGIN || '*', credentials: true }))
+  aapp.use(cors({ origin: '*', credentials: true }))rue }))
   app.use(express.json({ limit: '10mb' }))
   app.use(morgan('dev'))
 
